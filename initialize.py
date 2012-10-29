@@ -24,7 +24,7 @@ def setup():
     print ("Mathics initialized successfully.")
 
 if __name__ == '__main__':
-    if sys.version_info.major > (2):
+    if sys.version_info >= (3, 0):
         print ("python version higher than 2.7, try to launch with python2")
         subprocess.call(['/usr/bin/python2',  __file__ ])
         sys.exit()
